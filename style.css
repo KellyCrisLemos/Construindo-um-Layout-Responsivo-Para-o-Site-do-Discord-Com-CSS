@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+
+}
+header .banner img{
+    height: 459px;
+    width: 1280px; 
+}
+
+/*header .cabecalho h1, p, button{
+    z-index: 1;
+ }
+
+
+/*
+header{
+    display: inline-block;
+    text-align: center;
+    
+}
+header img{
+    position: relative;
+    height: 459px;
+    width: 1280px; 
+}
+header h1, p, button{
+   z-index: 1;
+}*/
