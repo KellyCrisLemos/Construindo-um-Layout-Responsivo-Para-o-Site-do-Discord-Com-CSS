@@ -1,29 +1,109 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
 
 }
-header .banner img{
-    height: 459px;
-    width: 1280px; 
-}
-
-/*header .cabecalho h1, p, button{
-    z-index: 1;
- }
-
-
-/*
-header{
-    display: inline-block;
-    text-align: center;
-    
-}
-header img{
+ header .banner{
     position: relative;
     height: 459px;
     width: 1280px; 
 }
-header h1, p, button{
-   z-index: 1;
-}*/
+header .banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;        /* Centraliza verticalmente */
+    left: 50%;      /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);   /* Ajusta a centralização */
+    color: white; /* Cor do texto */
+    z-index: 2; /* Garante que o texto apareça na frente */
+}
+.banner-content h1{
+    font-family: Luckiest Guy;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+    padding-bottom: 30px;
+    line-height: 100%; /*altura da linha*/
+}
+.banner-content p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    width: 757px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+#button-1{
+    width: 205px;
+    height: 44px;
+    border-radius: 28px;
+    color: rgba(35, 39, 42, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    border: none;
+    margin-left: 120px;
+    font-weight: 400;
+}
+#button-2{
+    width: 281px;
+    height: 44px;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    margin-left: 20px;
+}
+/*section 1*/
+
+main .section-1{
+    height: 448px;
+    width: 1279px; 
+    
+}
+.section-1conteudo{
+    display: flex;
+    width: 971px;
+    height: 394px;
+    margin: auto;
+    border: 2px solid black;
+    border-bottom: 1px solid green;
+}
+.section-1conteudo > h2{
+    display: flex;
+    flex-direction: column;
+  
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 30px;
+    
+    align-content: flex-start;
+    align-items: flex-start;
+    
+}
+.section-1conteudo > p{
+    
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    /*width: 190px;*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    display: flex;
+    flex-direction: column;
+
+}
