@@ -22,7 +22,7 @@ header .banner img{
     top: 50%;        /* Centraliza verticalmente */
     left: 50%;      /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);   /* Ajusta a centralização */
-    color: white; /* Cor do texto */
+    color: rgb(255, 255, 255,1); /* Cor do texto */
     z-index: 2; /* Garante que o texto apareça na frente */
 }
 .banner-content h1{
@@ -68,42 +68,168 @@ header .banner img{
 
 main .section-1{
     height: 448px;
-    width: 1279px; 
+    width: 1280px; 
     
 }
 .section-1conteudo{
     display: flex;
-    width: 971px;
+    width: 371px;
     height: 394px;
-    margin: auto;
-    border: 2px solid black;
-    border-bottom: 1px solid green;
+    margin-left: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;  
+    
 }
 .section-1conteudo > h2{
-    display: flex;
-    flex-direction: column;
-  
     font-family: Open Sans;
     font-size: 40px;
     font-weight: 800;
-    margin-top: 30px;
-    
-    align-content: flex-start;
-    align-items: flex-start;
+    margin-top: 25px;
+    width: 329px;
+    margin-bottom: 6px;
+    color: rgba(35, 39, 42, 1);
     
 }
-.section-1conteudo > p{
-    
+.section-1conteudo > p{  
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
-    /*width: 190px;*/
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-    align-items: flex-end;
+    width: 348px;
+    margin-left: 20px; 
+    color: rgba(35, 39, 42, 1);
+}
+.section-1conteudo > img{
+    margin-top: 20px;
+}  
+/*section-2*/
 
+main .section-2{
+    height: 448px;
+    width: 1280px; 
+    background-color: rgba(246, 246, 246, 1);
+}
+.section-2conteudo{
+    display: flex;
+    width: 371px;
+    height: 394px;
+    margin-left: 110px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+    
+}
+.section-2conteudo > h2{
+    font-family: Open Sans;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: rgba(35, 39, 42, 1);
+}
+.section-2conteudo > p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 348px;
+    color: rgba(35, 39, 42, 1);
+}
+.section-2conteudo > img{
+    width: 607px;
+    height: 394px;
+    margin-top: 25px;
+}
+
+/*section-3*/
+main .section-3{
+    height: 448px;
+    width: 1280px; 
+}
+.section-3conteudo{
+    display: flex;
+    width: 371px;
+    height: 394px;
+    margin-left: 120px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+.section-3conteudo > img{
+    width: 607px;
+    height: 394px;
+    margin-top: 26px;
+}
+.section-3conteudo > h2{
+    font-family: Open Sans;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 100px;
+    color: rgba(35, 39, 42, 1);
+}
+.section-3conteudo > p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    width: 348px;
+    height: 110px;
+    margin-top: 20px;
+    color: rgba(35, 39, 42, 1);
+}
+/*section-4*/
+main .section-4{
+    height: 744px;
+    width: 1280px; 
+    background-color: rgba(246, 246, 246, 1);
+    
+}
+.section-4conteudo{
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    
 }
+.section-4conteudo > img{
+    width: 784px;
+    height: 508px;
+    margin-top: 5px;
+    text-align: center;
+}
+.section-4conteudo > h2{
+    font-family: Luckiest Guy;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    width: 608px;
+    color: rgba(35, 39, 42, 1);
+}
+.section-4conteudo > p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    width: 802px;
+    height: 44px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(35, 39, 42, 1);
+}
+/*Rodapé*/
+
+footer{
+    height: 134px;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+/*@media (width: 428px) and (height: 926px) {
+    header .banner{
+        height: 505px;
+        width: 428px; 
+    }
+
+}*/
