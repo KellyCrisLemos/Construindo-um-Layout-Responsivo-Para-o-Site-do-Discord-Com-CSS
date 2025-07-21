@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header .banner{
+    position: relative;
+    height: 505px;
+    width: 428px; 
+}
+header .banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+header .banner-content{
+   position: absolute;
+   top: 75%;        /* Centraliza verticalmente */
+   left: 50%;      /* Centraliza horizontalmente */
+   transform: translate(-25%, -80%);   /* Ajusta a centralização */
+   color: rgb(255, 255, 255,1); /* Cor do texto */
+   z-index: 2; /* Garante que o texto apareça na frente */
+   width: 100%;
+}
+.banner-content > h1{
+    font-family: Luckiest Guy;
+    text-align: left;
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 10px;
+    
+}
+.banner-content p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    width: 280px;
+    height: 132px;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+#button-1{
+    width: 280px;
+    height: 52px;
+    border-radius: 28px;
+    color: rgba(35, 39, 42, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    border: none;
+    font-weight: 400;
+    margin-left: 3px;  
+}
+#button-2{
+    width: 280px;
+    height: 52px;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    margin-left: 3px;
+    margin-top: 20px;
+}
+/*section 1 mobile*/
+
+main .section-1{
+    height: 573px;
+    width: 428px; 
+    justify-content: center;  
+}
+.section-1conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start; 
+}
+.section-1conteudo > img{
+    margin-top: 50px;
+    width: 279px;
+    height: 252px;
+}  
+.section-1conteudo > h2{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+    width: 320px;
+    margin-bottom: 20px;
+    color: rgba(35, 39, 42, 1);
+}
+.section-1conteudo > p{  
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    width: 310px;
+    margin-left: 5px; 
+    color: rgba(35, 39, 42, 1);
+}
+/*section-2 mobile*/
+
+main .section-2{
+    height: 573px;
+    width: 428px; 
+    justify-content: center;
+    background-color: rgba(246, 246, 246, 1);
+}
+.section-2conteudo{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+.section-2conteudo > img{
+    width: 379px;
+    height: 252px;
+}  
