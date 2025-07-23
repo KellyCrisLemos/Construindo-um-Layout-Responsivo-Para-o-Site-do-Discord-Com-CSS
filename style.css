@@ -5,7 +5,6 @@
 *{
     margin: 0;
     box-sizing: border-box; 
-    
 }
 body{
     overflow-x: hidden;
@@ -227,10 +226,17 @@ main .section-4{
 }
 /*Rodapé*/
 
-footer .rodape{
+footer{
     height: 134px;
     width: 100vw;
     background-color: black;
-    text-align: center;
-    align-content: center;
+}
+footer .final{
+    height: 134px;
+    width: 100vw;
+}
+footer .final > img{
+    width: 230px;
+    height: 43px;
+    margin: 50px 500px 0px 500px;
 }

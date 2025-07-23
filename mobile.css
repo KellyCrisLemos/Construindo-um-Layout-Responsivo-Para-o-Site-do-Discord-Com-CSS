@@ -1,36 +1,241 @@
 @charset "UTF-8";
-    
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 1rem;
-    text-align: center;
-    overflow-x: hidden;
     
 }
 body, html{
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;  
 }
-header .banner .banner-content > p{
-    text-align: justify;
-    width: 90vw;
-    margin: auto;
+
+header .banner{
+    position: relative;
+    height: 505px;
+    width: 100vw;
+    max-width: 100%;
+}
+header .banner img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%; 
+    object-fit: cover;
+}  
+.banner-content {
+    position: absolute;
+    top: 40%;        /* Centraliza verticalmente */
+    left: 40%;      /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);   /* Ajusta a centralização */
+    color: white;
+    z-index: 2; /* Garante que o texto apareça na frente */
     
 }
-header .banner .banner-content > h1{
+.banner-content > h1{
+    font-family: Luckiest Guy;
     text-align: left;
+    font-weight: 400;
+    font-size: 32px;
+    padding: 60px 0px 10px 50px;
+    line-height: 100%; /*altura da linha*/ 
 }
-header .banner .banner-content > #button-1{
-    margin: auto;
-   margin-bottom: 10px;
+.banner-content > p{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    width: 318px;
+    text-align: justify;
+    padding: 10px 0px 20px 50px;
 }
-main .section-1 .section-1conteudo > h2, p, img {
-    display: inline;
+#button-1{
+    width: 270px;
+    height: 40px;
+    border-radius: 28px;
+    color: rgba(35, 39, 42, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    border: none;
+    margin-left: 50px;
+    font-weight: 400;
+}
+#button-2{
+    width: 270px;
+    height: 40px;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+    font-family: Open Sans;
+    font-size: 14px;
+    border: none;
+    margin: 30px 0px 0px 50px;
+    font-weight: 400;
+}
+/*section 1 - mobile*/
+main .section-1{
+    height: 505px;
+    width: 100vw; 
+}
+.section-1conteudo{
+    display: flex;
     width: 90vw;
-    font-size: 1rem;
-    margin: auto;
+    height: 505px;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;   
+}
+.section-1conteudo > img{
+    width: 90vw;
+    margin-top: 20px;
+}
+.section-1conteudo > h2{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0px 10px 10px;
+    color: rgba(35, 39, 42, 1); 
+}
+.section-1conteudo > p{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px 10px 10px;
+    color: rgba(35, 39, 42, 1);
+}
+/*section 2 - mobile*/
+main .section-2{
+    height: 505px;
+    width: 100vw; 
+    background-color: rgba(246, 246, 246, 1);
+}
+.section-2conteudo{
+    display: flex;
+    width: 90vw;
+    height: 505px;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;    
+}
+.section-2conteudo > img{
+    width: 90vw;
+    margin-top: 30px;
+    order: 0;
+}
+.section-2conteudo > h2{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0px 20px 0px;
+    color: rgba(35, 39, 42, 1); 
+    order: 1;
+}
+.section-2conteudo > p{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px 10px 10px;
+    color: rgba(35, 39, 42, 1);
+    order: 2;
+}
+/*section 3 - mobile*/
+main .section-3{
+    height: 505px;
+    width: 100vw; 
+}
+.section-3conteudo{
+    display: flex;
+    width: 90vw;
+    height: 505px;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;    
+}
+.section-3conteudo > img{
+    width: 90vw;
+    margin-top: 40px;
+    order: 0;
+}
+.section-3conteudo > h2{
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0px 20px 0px;
+    color: rgba(35, 39, 42, 1); 
+    order: 1;
+}
+.section-3conteudo > p{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0px 10px 10px;
+    color: rgba(35, 39, 42, 1);
+    order: 2;   
+}
+
+/*section 4 - mobile*/
+main .section-4{
+    height: 540px;
+    width: 100vw; 
+    background-color: rgba(246, 246, 246, 1);
+}  
+.section-4conteudo{
+    display: flex;
+    width: 90vw;
+    height: 540px;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;   
+}
+.section-4conteudo > img{
+    width: 90vw;
+    margin-top: 10px;
+    order: 2;
+}
+.section-4conteudo > h2{
+    font-family: Luckiest Guy;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 40px 0px 20px 0px;
+    color: rgba(35, 39, 42, 1); 
+    order: 0;
+    text-align: center;
+}
+.section-4conteudo > p{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0px 10px 10px;
+    color: rgba(35, 39, 42, 1);
+    order: 1;   
+}
+
+/*footer-mobile*/
+
+footer{
+    height: 140px;
+    width: 100vw;
+    background-color: black;
+}
+footer .final{
+    height: 140px;
+    width: 100vw;
     
+}
+footer .final > img{
     
+    width: 160px;
+    height: 30px;
+    margin: 50px 130px 0px 130px;
 }
